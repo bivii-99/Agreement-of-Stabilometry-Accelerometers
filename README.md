@@ -24,8 +24,13 @@ An R analysis is used to study the agreement between force-plate stabilometric m
                      ▼
       Classification: RF, FNN, NB, KNN
 
-         
-## 3. Software Ecosystem
+## 3. File format
+### Bland-Altman analysis
+The present repository requires an input data frame must have NxM dimensions, where N is the number of total tests acquired and M corresponds to "Class", "Subject Number", and the extracted parameters. 
+### Data augmentation
+Data augmentation is done independently for each group. The input trajectory data frame must have NxM dimensions, where N are the test datapoints and M the test number. Output synthetic data frame is an NxM matrix, where N is the total number of agumented tests, and M corresponds to features extracted.
+
+## 4. Software Ecosystem
 
 A broader software ecosystem was developed for IMU-based postural assessment, which also includes tools for data acquisition and signal processing.
 
