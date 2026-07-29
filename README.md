@@ -1,9 +1,9 @@
 # Agreement-of-Stabilometry-Accelerometers
 Folder that contains all steps of the project
 ## 1. Background
+This repository contains the statistical analysis used in the manuscript.
+An R analysis is used to study the agreement between force-plate stabilometric measures and wearable IMU accelerometers placed at L3 and trunk using Bland–Altman analysis. A A Python analysis is used in data augmentation and heriarchical classification.
 
-This repository contains the R analysis used in the manuscript:
-Agreement between force-plate stabilometric measures and wearable IMU accelerometers placed at L3 and trunk using Bland–Altman analysis.
 ## 2. Workflow
 
       
@@ -18,11 +18,17 @@ Agreement between force-plate stabilometric measures and wearable IMU accelerome
              Bias estimation
                      │
                      ▼
-        Calibrated accelerometer variables
-        
+  Calibrated accelerometer-derived parameters
+                     │
+                     ▼
+          Genetic Data Augmentation 
+                     │
+                     ▼
+      Classification: RF, FNN, NB, K-Means
+         
 ## 3. Software Ecosystem
 
-This repository contains the statistical analysis used in the manuscript. It is part of a broader software ecosystem developed for IMU-based postural assessment, which also includes tools for data acquisition and signal processing.
+ It is part of a broader software ecosystem developed for IMU-based postural assessment, which also includes tools for data acquisition and signal processing.
 
 ### IMU-Friendly Toolbox
 
