@@ -19,3 +19,14 @@ Agreement between force-plate stabilometric measures and wearable IMU accelerome
                      │
                      ▼
         Calibrated accelerometer variables
+        
+## 3. Software ecosystem
+
+### IMU-Friendly Toolbox
+The processed CSV files can be imported into the IMU-Friendly Toolbox for preprocessing, feature extraction and classification. ù
+The software allows new recordings using Wireless YOST sensor v2.0, connected to a USB-connected dongle v1.0. 
+See https://github.com/bivii-99/IMU-Friendly-Toolbox
+
+### YostCPP-MacOS
+Alternatively, IMU recordings can be acquired directly through the C/C++ acquisition software.
+See https://github.com/bivii-99/YostCPP-MacOS
