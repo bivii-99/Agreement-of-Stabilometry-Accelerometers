@@ -5,24 +5,7 @@ This repository contains the statistical analysis used in the manuscript.
 An R analysis is used to study the agreement between force-plate stabilometric measures and wearable IMU accelerometers placed at L3 and trunk using Bland–Altman analysis. A A Python analysis is used in data augmentation and heriarchical classification. The latter evaluates the performance of Random Forest (RF), Feedforward Neural Network (FNN), Naive Bayes (NB), K-and Nearest Neighbour (KNN) on two nodes: healthy vs patients — node 1 —, and Level Sitting Scale degree (LSS) for patients (DG: LSS<6, SG:LSS=6, IG:LSS>6) — node 2 —. 
 
 ## 2. Workflow
- IMU L3       Force plate       IMU Trunk
-      │            | |              │
-      └────────────┘ └──────────────┘
-             │                │
-             ▼                ▼
-            Bland–Altman analysis
-                     │
-                     ▼
-             Bias estimation
-                     │
-                     ▼
-  Calibrated accelerometer-derived parameters
-                     │
-                     ▼
-          Genetic Data Augmentation 
-                     │
-                     ▼
-      Classification: RF, FNN, NB, KNN
+<img width="370" height="448" alt="image" src="https://github.com/user-attachments/assets/7f7e6968-3ade-402c-a835-dc7d54106d0c" />
 
 ## 3. File format
 ### Bland-Altman analysis
