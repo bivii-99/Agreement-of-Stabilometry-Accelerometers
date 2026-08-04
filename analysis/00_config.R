@@ -60,7 +60,7 @@ functions_dir <- file.path(project_dir, "functions")
 platform_file <- file.path(input_dir, "df_platform.xlsx")
 l3_file       <- file.path(input_dir, "df_l3.xlsx")
 trunk_file    <- file.path(input_dir, "df_trunk.xlsx")
-lss_file      <- file.path(input_dir, "Patients_categ_cluster.xlsx")
+lss_file      <- file.path(input_dir, "subjects_lss.xlsx")
 
 
 #------------------------------------------------------------------------------
