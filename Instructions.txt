@@ -1,0 +1,109 @@
+======================================================================
+Dynamic Accelerometry Machine Learning Pipeline
+======================================================================
+
+This repository contains two pipelines:
+
+1. R pipeline
+2. Python pipeline
+
+The R pipeline performs:
+
+    • Data loading
+    • Preprocessing
+    • Bland–Altman analysis
+    • Calibration
+
+The Python pipeline performs:
+
+    • Data augmentation
+    • Feature extraction
+    • Dataset preparation
+    • Classifier training
+
+======================================================================
+Step 1 - Configure the project
+======================================================================
+
+Open
+
+    00_config.R
+
+and edit
+
+    PROJECT_DIR
+
+to your local repository.
+
+Open
+
+    00_config.py
+
+and edit
+
+    PROJECT_DIR
+
+to the same location.
+
+======================================================================
+Step 2 - Run the R pipeline
+======================================================================
+
+Run the scripts in the following order:
+
+    00_config.R
+    01_load_data.R
+    02_preprocessing.R
+    03_parametric.R
+    03_nonparametric.R
+    04_merge_calibration.R
+
+This generates
+
+    Intermediate/
+        01_load_data.rds
+        02_preprocessing.rds
+        03_parametric.rds
+        03_nonparametric.rds
+        04_calibrated_data.rds
+
+======================================================================
+Step 3 - Run the Python pipeline
+======================================================================
+
+Execute
+
+    python run_analysis.py
+
+or alternatively
+
+    python 05_data_augmentation.py
+    python 06_extract_augmented_features.py
+    python 07_prepare_dataset.py
+    python 08_train_classifier.py
+
+This generates
+
+    Intermediate/
+        05_augmented_trajectories.pkl
+        06_augmented_features.pkl
+        07_dataset.pkl
+        08_classifier.pkl
+
+and
+
+    Results/
+        RF.pkl
+        scaler.pkl
+
+======================================================================
+Final output
+======================================================================
+
+The trained classifier used by the Friendly IMU Toolbox is
+
+    Results/Classifier/RF.pkl
+
+The corresponding scaler is
+
+    Results/Classifier/scaler.pkl
