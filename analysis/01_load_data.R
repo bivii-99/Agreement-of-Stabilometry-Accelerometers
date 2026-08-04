@@ -23,7 +23,7 @@
 fp <- read_excel(platform_file)
 l3 <- read_excel(l3_file)
 trunk <- read_excel(trunk_file)
-
+lss <- read_excel(lss_file)
 
 #==============================================================================
 # Basic validation
