@@ -24,25 +24,16 @@ The Python pipeline performs:
 ======================================================================
 Step 1 - Configure the project
 ======================================================================
-
 Open
-
     00_config.R
-
 and edit
-
     PROJECT_DIR
-
 to your local repository.
 
 Open
-
     00_config.py
-
 and edit
-
     PROJECT_DIR
-
 to the same location.
 
 ======================================================================
@@ -50,7 +41,6 @@ Step 2 - Run the R pipeline
 ======================================================================
 
 Run the scripts in the following order:
-
     00_config.R
     01_load_data.R
     02_preprocessing.R
@@ -59,7 +49,6 @@ Run the scripts in the following order:
     04_merge_calibration.R
 
 This generates
-
     Intermediate/
         01_load_data.rds
         02_preprocessing.rds
@@ -70,28 +59,23 @@ This generates
 ======================================================================
 Step 3 - Run the Python pipeline
 ======================================================================
-
 Execute
-
     python run_analysis.py
 
 or alternatively
-
+    python 00_config.py
     python 05_data_augmentation.py
     python 06_extract_augmented_features.py
     python 07_prepare_dataset.py
     python 08_train_classifier.py
 
 This generates
-
     Intermediate/
         05_augmented_trajectories.pkl
         06_augmented_features.pkl
         07_dataset.pkl
         08_classifier.pkl
-
 and
-
     Results/
         RF.pkl
         scaler.pkl
@@ -101,9 +85,7 @@ Final output
 ======================================================================
 
 The trained classifier used by the Friendly IMU Toolbox is
-
     Results/Classifier/RF.pkl
 
 The corresponding scaler is
-
     Results/Classifier/scaler.pkl
