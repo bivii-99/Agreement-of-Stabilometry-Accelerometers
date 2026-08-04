@@ -32,7 +32,7 @@ data <- readRDS(file.path(intermediate_dir, "01_load_data.rds"))
 fp    <- data$fp
 l3    <- data$l3
 trunk <- data$trunk
-lss <- data$lss
+lss   <- data$lss
 
 
 #==============================================================================
