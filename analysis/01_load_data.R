@@ -8,11 +8,13 @@
 #   - Force plate feature matrix
 #   - IMU L3 feature matrix
 #   - IMU Trunk feature matrix
+#   - LSS matrix
 #
 # Output:
 #   - fp
 #   - l3
 #   - trunk
+#   - lss
 ###############################################################################
 
 
